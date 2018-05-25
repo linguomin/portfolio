@@ -1,0 +1,186 @@
+.container-fluid {
+    padding: 0;
+}
+
+/*星星样式*/
+#stars {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #000;
+    -o-perspective: 340px;
+    perspective: 340px;
+    overflow: hidden;
+}
+
+.stars {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    box-shadow: 40px -10px #c9c9c9, 20px 30px #f7f7f7, 70px -10px #f7f7f7, 270px -15px #e3e3e3,
+    370px -15px #e3e3e3, 300px -15px #e3e3e3, -70px -15px #e3e3e3, -170px -15px #e3e3e3, -100px -15px #e3e3e3,
+    -70px 15px #e3e3e3, -80px -20px #e3e3e3, -90px -1px #e3e3e3, -110px -15px #e3e3e3, -50px 10px #e3e3e3,
+    -210px 9px #e3e3e3, -314px 15px #e3e3e3, -319px -15px #e3e3e3, -210px -20px #e3e3e3, -410px -20px #e3e3e3,
+    -410px 2px #e3e3e3, -410px 0px #e3e3e3, -312px 0px #e3e3e3, -310px 0px #e3e3e3, -320px 8px #e3e3e3,
+    -312px 8px #e3e3e3, -360px 25px #e3e3e3, -345px 5px #e3e3e3, -355px -5px #e3e3e3, -380px -10px #e3e3e3,
+    -315px -20px #e3e3e3, -215px -20px #e3e3e3, -245px -20px #e3e3e3, -265px -10px #e3e3e3,
+    -265px 1px #e3e3e3, 140px -10px #c9c9c9, 240px -10px #c9c9c9, 340px -10px #c9c9c9, 260px -10px #c9c9c9,
+    160px 1px #c9c9c9, 40px 1px #c9c9c9, 60px 1px #c9c9c9, 80px 1px #c9c9c9, 270px 15px #e3e3e3,
+    370px 10px #e3e3e3, 170px 5px #e3e3e3, 350px 11px #e3e3e3, 10px 15px #e3e3e3, 10px -15px #e3e3e3,
+    10px -5px #e3e3e3, -10px -5px #e3e3e3, -10px -8px #e3e3e3, -15px -8px #e3e3e3, -80px -8px #e3e3e3,
+    -90px -8px #e3e3e3, -110px -8px #e3e3e3, -125px -8px #e3e3e3, -125px 8px #e3e3e3, -125px 18px #e3e3e3;
+    -o-animation: fly 2s linear infinite;
+    -moz-animation: fly 2s linear infinite;
+    -webkit-animation: fly 2s linear infinite;
+    animation: fly 2s linear infinite;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+@-o-keyframes fly {
+    from {
+        opacity: .6;
+        -moz-transform: translateZ(0px);
+        -webkit-transform: translateZ(0px);
+    }
+    to {
+        opacity: 1;
+        -moz-transform: translateZ(300px);
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+    }
+}
+
+@-moz-keyframes fly {
+    from {
+        opacity: .6;
+        -moz-transform: translateZ(0px);
+        -webkit-transform: translateZ(0px);
+    }
+    to {
+        opacity: 1;
+        -moz-transform: translateZ(300px);
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+    }
+}
+
+@-webkit-keyframes fly {
+    from {
+        opacity: .6;
+        -moz-transform: translateZ(0px);
+        -webkit-transform: translateZ(0px);
+    }
+    to {
+        opacity: 1;
+        -moz-transform: translateZ(300px);
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+    }
+}
+
+@keyframes fly {
+    from {
+        opacity: .6;
+        -o-transform: translateZ(0px);
+        -moz-transform: translateZ(0px);
+        transform: translateZ(0px);
+    }
+    to {
+        opacity: 1;
+        -o-transform: translateZ(300px);
+        -moz-transform: translateZ(300px);
+        transform: translateZ(300px);
+    }
+}
+
+/*头部样式*/
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.home {
+    background: url(http://img3.bitautoimg.com/bitauto/2012/08/103116216.JPG) no-repeat center center fixed;
+    margin-top: 60px;
+}
+
+.row {
+    margin: 0;
+}
+
+.intro {
+    margin-top: 10%;
+}
+
+.intro > h1 {
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+.intro > h4 {
+    color: #8af8fd;
+}
+
+.intro > hr {
+    margin-top: 3%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+#connect > a {
+    margin-bottom: 5px;
+}
+
+.about {
+    background: url(http://img.taopic.com/uploads/allimg/130519/234941-13051921455070.jpg) no-repeat center center fixed;
+}
+
+.myIntro {
+    color: #a3e4af;
+    padding: 10px;
+}
+
+.center-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.portfolio {
+    background: url(http://img.sccnn.com/bimg/337/22079.jpg) no-repeat center center fixed;
+}
+
+.contact {
+    background: url(http://bpic.ooopic.com/16/89/76/16897663-4b703c6b307fcdfa0fa6737d1af07ea3-1.jpg) no-repeat center center fixed;
+}
+
+.home, .about, .portfolio, .contact {
+    height: 750px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.portfolio .card{
+    width: 380px;
+    height: 235px;
+    margin-bottom: 40px;
+}
+.portfolio .card>.img{
+    height: 200px;
+    overflow: hidden;
+}
+.portfolio .card-body{
+    padding: 0;
+}
+
